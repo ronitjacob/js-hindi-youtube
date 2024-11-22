@@ -1,29 +1,23 @@
-"use strict"; // treat all JS code as newer version
+"use strict"; //treat all JS code as newer version
 
-//alert(3+3)// we are using nodesjs, not browser
+// alert(3 + 3)// we are using nodejs, not browser
 
-console.log(3
-    +
-    3) // code readability should be high
+console.log(3 + 3) // code readability should be high
 
-    console.log("Ronit");
-
-    let name = "ronit"
-    let age = 18
-    let isLoggedIn = false
-    let state;
+let name = "ronit"
+let age = 18
+let isLoggedIn = false
+let state;
 
 
+// number => 2 to power 53
+// bigint
+// string => ""
+// boolean => true/false
+// null
+// undefined => 
+// symbol
 
-    // number => 2 to power 53
-    // bigint
-    // string =>""
-    // boolean => true/false
-    // null => standalone value
-    // undefined => 
-    // symbol => unique
-    
+// object
 
-    // object
-
-    console.log(typeof "ronit");
+console.log(typeof age);
