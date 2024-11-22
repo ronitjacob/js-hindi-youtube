@@ -1,21 +1,21 @@
 const accountId = 144553
-let accountEmail = "ronit@google.com"
-var accounPassword = "12345"
+let accountEmail = "ronit@gmail.com"
+var accountPassword = "12345"
 accountCity = "Delhi"
+let accountState;
 
 // accountId = 2 // not allowed
 
-
 accountEmail = "hc@hc.com"
-accounPassword = "21212121"
-accountCity = "Mumbai"
-
+accountPassword = "21212121"
+accountCity= "Bengaluru"
 
 console.log(accountId);
 
 /*
-Prefer not to use var
-because of issue in block scope and functional scope
+prefer not to use var
+because of issue in block scope and functional scope 
 */
-console.table([accountId, accountEmail, accounPassword, accountCity])
+
+console.table([accountId,accountEmail,accountPassword,accountCity,accountState]);
 
