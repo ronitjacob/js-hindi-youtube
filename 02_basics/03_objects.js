@@ -1,31 +1,44 @@
 // singleton
-//object.create
+// Object.create
 
 // object literals
 
-const mySym = Symbole("key1")
+const mySym = Symbol("key1")
 
-
-const JsUser = {
-    name: "Ronit",
-    [mySym]: "mykey1",
+const jsUser = {
+    name: "ronit",
+    "full name": "Ronit Jacob",
+    mySym: "mykey1",
     age: 18,
-    location: "Delhi",
-    email: "ronit@googlecom",
+    email: "ronit@google.com",
     isLoggedIn: false,
-    lastLoginDays: ["MONDAY", "SATURDAY"]
+    lastLoginDays: ["monday","friday"]
 }
-// console.log(JsUser);
-// console.log(JsUser["email"]);
-// console.log(JsUser[mySym]);
 
-JsUser.email = "ronit@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "ronit@microsoft.com"
-console.log(JsUser);
+// console.log(jsUser.email);
+// console.log(jsUser["email"]);
+// console.log(jsUser["full name"]);
+// console.log(jsUser.mySym);
 
-JsUser.greeting = function(){
+jsUser.email = "ronit@google.com"
+// Object.freeze(jsUser)
+jsUser.email = "ronit@apple.com"
+// console.log(jsUser);
+
+jsUser.greeting = function(){
     console.log("Hello JS user");
+    
 }
 
-console.log(JsUser.greeting);
+jsUser.greeting2 = function(){
+    console.log(`Hello JS user, ${this.name}`);
+    
+}
+
+console.log(jsUser.greeting());
+console.log(jsUser.greeting2());
+
+
+
+
+
