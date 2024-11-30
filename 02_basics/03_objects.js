@@ -8,7 +8,7 @@ const mySym = Symbol("key1")
 const jsUser = {
     name: "ronit",
     "full name": "Ronit Jacob",
-    mySym: "mykey1",
+    [mySym]: "mykey1",
     age: 18,
     email: "ronit@google.com",
     isLoggedIn: false,
@@ -18,7 +18,7 @@ const jsUser = {
 // console.log(jsUser.email);
 // console.log(jsUser["email"]);
 // console.log(jsUser["full name"]);
-// console.log(jsUser.mySym);
+// console.log(jsUser[mySym]);
 
 jsUser.email = "ronit@google.com"
 // Object.freeze(jsUser)
