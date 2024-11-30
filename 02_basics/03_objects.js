@@ -26,17 +26,17 @@ jsUser.email = "ronit@apple.com"
 // console.log(jsUser);
 
 jsUser.greeting = function(){
-    console.log("Hello JS user");
+    console.log("Hello Js user");
     
 }
 
-jsUser.greeting2 = function(){
-    console.log(`Hello JS user, ${this.name}`);
+jsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name} `);
     
 }
 
 console.log(jsUser.greeting());
-console.log(jsUser.greeting2());
+console.log(jsUser.greetingTwo());
 
 
 
